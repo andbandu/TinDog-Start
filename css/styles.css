@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu:300,400,700&display=swap');
+
+:root{
+    --primary-color : #ff4c68;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* utilities styling */
+
+.container-one{
+     margin:0 15%;
+     padding: 3% 0 0 0;
+}
+
+
+h1{
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+h3{
+    line-height: 1.5;
+}
+
+p{
+    line-height: 1.5;
+}
+
+
+
+/*-----------navbar style ----------------*/
+
+
+.navbar{
+    padding: 0;
+    padding-bottom: 5rem;
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.nav-link{
+    font-size: 1.25rem;
+}
+
+
+
+/*------- title syle------*/
+
+#title{
+    background: var(--primary-color );
+}
+
+#title h1{
+    color: #fff;
+    font-size: 4rem;
+   
+}
+
+#title .btn{
+    margin: 1rem;
+}
+
+
+#title .img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#title .img-container img{
+    width: 60%;
+    transform: rotate(25deg);
+}
+
+
+/*------------- features style-----------*/
+#features{
+    position: relative;
+    background: #fff;
+    z-index: 3;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+#features i{
+    color: #ef8271;
+    margin-bottom: 2rem;
+}
+
+#features i:hover{
+    color: #ff4c68;
+}
+
+.box{
+    padding: 4.5%;
+}
+
+#features h3{
+    font-weight: 700;
+}
+
+
+/*---------- Testimonials ----------------*/
+
+#testimonials{
+    background: var(--primary-color);
+    
+    text-align: center;
+}
+
+#testimonials .carousel-item{
+    padding: 7% 15%;
+}
+
+#testimonials h2{
+    color: #ffff;
+    font-size: 3rem;
+    list-style: 1.5;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#testimonials img{
+    border-radius: 50%;
+    width: 5rem;
+}
+
+
+#testimonials em{
+    color: #fff;
+    margin: 1rem;
+}
+
+
+/* press section styling */
+
+#press{
+    background: var(--primary-color);
+    padding: 2% 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#press img{
+    margin: 0 2rem;
+    width: 150px;
+    height: auto;
+}
+
+/*-------- pricing styling ------*/
+
+#pricing {
+    padding: 7% 15%;
+}
+
+#pricing h2{
+    color: #000;
+    font-size: 3rem;
+    list-style: 1.5;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+#pricing .titleP{
+        margin-bottom: 2rem;
+}
+
+#pricing h3{
+    color: #000;
+    font-size: 2rem;
+    list-style: 1.5;
+    font-weight: 700; }
+
+/*-------------cta styling ------------*/
+
+#cta{
+    background: var(--primary-color);
+    padding: 2% 15%;
+    color: #fff;
+    text-align: center;
+}
+
+#footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+
+    /*---------------media quaries---------------*/
+    @media screen and (max-width: 992px) {
+        #title{
+            text-align: center;
+        }
+        #title .img-container img{
+            transform: rotate(0);
+            position: static;
+            width: 100%;
+        }
+    }
